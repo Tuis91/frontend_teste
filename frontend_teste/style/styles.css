@@ -98,6 +98,10 @@ body {
   font-size: 14px;
 }
 
+.invisible {
+  display: none;
+}
+
 .errorMsg {
 text-align: center;
 font-weight: bold;
