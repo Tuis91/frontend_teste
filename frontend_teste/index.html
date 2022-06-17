@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Teste Frontend VAGAS.com</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style/styles.css" />
+  </head>
+
+  <body>
+    <div class="box">
+      <header class="header">
+        <h1 class="title">
+          Formulário<br />para compra de<br /><span>Pacote de Stickers</span>
+        </h1>
+      </header>
+      <div class="space" aria-hidden="true"></div>
+      <form id="buyStickerForm" class="form" action="compra-feita.html">
+        <div class="space" aria-hidden="true"></div>
+		<p id="error" class="errorMsg"></p>
+		<div class="space" aria-hidden="true"></div>
+        <section class="fieldset">
+          <h2 class="label">Quais stickers: </h2>
+          <div class="space" aria-hidden="true"></div>
+		  <label class="checkbox-itens">
+          <input id="reactCheckbox" type="checkbox" name="stickers" />
+		  React  
+		  </label>
+		  <label class="checkbox-itens">
+		  <input id="vueCheckbox" type="checkbox" name="stickers" />
+		  Vue
+		  </label>
+		  <label class="checkbox-itens">
+          <input id="angularCheckbox" type="checkbox" name="stickers" />
+		  Angular
+		  </label> 
+        </section>
+        <div class="space-md"></div>
+        <section class="fieldset">
+          <h2 class="label">Quantos stickers de cada?</h2>
+          <div class="space" aria-hidden="true"></div>
+          <div class="counter">
+            <svg id="counter-left-btn" xmlns="http://www.w3.org/2000/svg" width="42" height="42">
+              <path
+                d="M4.667 0A4.668 4.668 0 0 0 0 4.667v32.666A4.668 4.668 0 0 0 4.667 42h32.666A4.668 4.668 0 0 0 42 37.333V4.667A4.668 4.668 0 0 0 37.333 0H4.667zm28 23.333H9.333v-4.666h23.334v4.666z"
+              />
+            </svg>
+            <input id="counter-now" type="text" placeholder="0" required/>
+            <svg id="counter-right-btn" xmlns="http://www.w3.org/2000/svg" width="42" height="42">
+              <path
+                d="M4.667 42h32.666A4.668 4.668 0 0 0 42 37.333V4.667A4.668 4.668 0 0 0 37.333 0H4.667A4.668 4.668 0 0 0 0 4.667v32.666A4.668 4.668 0 0 0 4.667 42zm4.666-23.333h9.334V9.333h4.666v9.334h9.334v4.666h-9.334v9.334h-4.666v-9.334H9.333v-4.666z"
+              />
+            </svg>
+          </div>
+        </section>
+        <div class="space-md" aria-hidden="true"></div>
+        <section class="fieldset">
+          <h2 class="label">Observações:</h2>
+          <div class="space" aria-hidden="true"></div>
+          <textarea
+            name="descricao"
+            placeholder="Alguma dúvida? Recado?"
+          ></textarea>
+        </section>
+        <div class="space-md" aria-hidden="true"></div>
+        <footer class="footer">
+          <input type="submit" class="submit-btn" value="Enviar" />
+		</footer>
+	</form>
+    </div>
+
+    <script src="./js/index.js"></script>
+	<script src="./js/counter.js"></script>
+  </body>
+</html>
